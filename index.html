@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="styles.css">
     <title>Portfolio</title>
 </head>
+
 <body>
     <div class="sidebar">
         <div class="logo">
@@ -23,19 +25,29 @@
             <div class="icon"></div>
         </div>
     </div>
-    <div class="top-section">
-        <h1>Christen Broddle</h1>
-        <h3>Front-End</h3>
-        <h5>Web Developer</h5>
-    </div>
-    <div class="mid-section">
-        <div class="projects">
-            <div class="library-app"></div>
-            <div class="calculator"></div>
-            <div class="plantswelove"></div>
-            <div class="form"></div>
+    <div class="main-container">
+        <div class="top-section">
+            <h1>Christen Broddle</h1>
+            <h3>Front-End</h3>
+            <h5>Web Developer</h5>
         </div>
+        <div class="mid-section">
+            <div class="projects">
+                <div id="library-app"><img class="project-icon" src="./images/booksiveread.webp" alt="library-app"></div>
+                <div id="calculator"><img class="project-icon" src="./images/calculator.webp" alt="calculator"></div>
+                <div id="plantswelove"><img class="project-icon" src="./images/plants2.webp" alt="plants"></div>
+                <div id="form"><img class="project-icon" src="./images/signup.webp" alt="signup"></div>
+            </div>
+            <div class="contact">
+                <p class="contact-heading">Contact</p>
+                <input type="text" class="contact-input" id="name" name="name" value="Name"><br>
+                <input type="email" class="contact-input" id="email" name="email" 
+                value="Email"><br>
+                <input type="submit" id="submit" name="submit" value="Submit">
+            </div>
+        </div>
+        
     </div>
-    <div class="contact"></div>
 </body>
+
 </html>
