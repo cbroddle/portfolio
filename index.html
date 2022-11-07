@@ -12,41 +12,52 @@
 <body>
     <div class="sidebar">
         <div class="logo">
-            <h3>CDv</h3>
+            <img src="./images/Cdev2.png" alt="cdev_logo">
         </div>
         <div class="nav">
-            <a href="">About</a>
-            <a href="">Work</a>
-            <a href="">Contact</a>
+            <a href="index.html#about">About</a>
+            <a href="index.html#projects">Projects</a>
+            <a href="index.html#contact">Contact</a>
         </div>
         <div class="footer">
-            <div class="icon"></div>
-            <div class="icon"></div>
-            <div class="icon"></div>
+            <div class="icon"><a href="https://github.com/cbroddle" class="linkedin"><img src="./svgs/github copy.svg" alt="github-icon"></a></div>
+            <div class="icon"><a href="https://www.linkedin.com/in/christen-broddle-97185140/" class="linkedin"><img src="./svgs/linkedin.svg" alt="linkedin-icon"></a></div>
         </div>
     </div>
     <div class="main-container">
         <div class="top-section">
-            <h1>Christen Broddle</h1>
-            <h3>Front-End</h3>
-            <h5>Web Developer</h5>
-        </div>
-        <div class="mid-section">
-            <div class="projects">
-                <div id="library-app"><img class="project-icon" src="./images/booksiveread.webp" alt="library-app"></div>
-                <div id="calculator"><img class="project-icon" src="./images/calculator.webp" alt="calculator"></div>
-                <div id="plantswelove"><img class="project-icon" src="./images/plants2.webp" alt="plants"></div>
-                <div id="form"><img class="project-icon" src="./images/signup.webp" alt="signup"></div>
+            <div class="headings">
+                <img src="./images/name_script_heading.png" alt="name-logo" class="name-logo">
+                <h3>Front-End</h3>
+                <h5>Web Developer</h5>
             </div>
-            <div class="contact">
+            <div class="about" id="about">
+                <h3>About</h3>
+                <p class="about-text">Hi, I’m Christen. I’m a new front-end web developer with a background in design. I have 1+ year experience creating websites in Shopify and Wordpress. >1yr creating site templates with HTML, CSS, and JS. I have used Github for 1+ yr, all of my current projects are hosted there. I am always eager to learn more, and currently working on coursework and projects using React and Node.Js.</p>
+            </div>
+        </div>
+
+        <div class="mid-section">
+            <h3 class="projects-heading">Projects</h3>
+            <div class="projects" id="projects">
+                <div id="library-app"><a href="https://cbroddle.github.io/library/"><img class="project-icon"
+                            src="./images/booksiveread.webp" alt="library-app"></a></div>
+                <div id="calculator"><a href="https://cbroddle.github.io/calculator/"><img class="project-icon"
+                            src="./images/calculator.webp" alt="calculator"></a></div>
+                <div id="plantswelove"><a href="https://cbroddle.github.io/plantswelove/"><img class="project-icon"
+                            src="./images/plants2.webp" alt="plants"></a></div>
+                <div id="form"><a href="https://cbroddle.github.io/sign_up/"><img class="project-icon"
+                            src="./images/signup.webp" alt="signup"></a></div>
+            </div>
+            <div class="contact" id="contact">
                 <p class="contact-heading">Contact</p>
-                <input type="text" class="contact-input" id="name" name="name" value="Name"><br>
-                <input type="email" class="contact-input" id="email" name="email" 
-                value="Email"><br>
+                <input type="text" class="contact-input" id="name" name="name" placeholder="Full Name" required><br>
+                <input type="email" class="contact-input" id="email" name="email" placeholder="youremail@mail.com" required><br>
+                <input type="text" class="contact-input" id="message" placeholder="Type message here...">
                 <input type="submit" id="submit" name="submit" value="Submit">
             </div>
         </div>
-        
+
     </div>
 </body>
 

@@ -37,7 +37,11 @@ h5 {
 .logo {
     /* font Comfortaa */
     padding: 35px;
-    font-size: 32px;
+}
+
+.logo > img {
+   width: 100px;
+   height: auto;
 }
 
 .nav {
@@ -55,6 +59,18 @@ h5 {
     text-decoration: none;
 }
 
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.icon {
+    fill: white;
+    height: 35px;
+    width: 35px;
+    padding: 8px;
+}
+
 .main-container {
     display: flex;
     flex-direction: column;
@@ -66,10 +82,37 @@ h5 {
     color: #ff00c8ff;
 }
 
+.name-logo {
+    height: 58px;
+    padding-bottom: 35px; 
+}
+
+.headings {
+    padding-bottom: 200px;
+}
+
+.about {
+    background-color: white;
+    padding-top: 300px;
+    padding-right: 200px;
+    padding-left: 50px;
+}
+
+.about-text {
+    font-size: 16px !important;
+    line-height: 1.5em;
+}
+
 .mid-section {
     background-color: #ff00c844;
     flex: auto;
     padding: 50px;
+}
+
+.projects-heading {
+    display: flex;
+    justify-content: center;
+    color: #ff00c8ff;
 }
 
 .projects {
@@ -77,6 +120,8 @@ h5 {
     grid-template-columns: repeat(2, 1fr);
     justify-items: center;
 }
+
+
 
 .project-icon {
     height: 200px;
@@ -106,6 +151,10 @@ h5 {
     padding: 8px;
 }
 
+#message {
+    padding-bottom: 50px;
+}
+
 #submit {
     color: white;
     background-color: #ff00c8ff;
@@ -113,7 +162,7 @@ h5 {
     padding: 8px 16px;
     border: transparent;
     border-radius: 8px;
-    margin: 16px 0;
+    margin: 35px 0;
     width: 55%;
 }
 
@@ -121,3 +170,4 @@ h5 {
     color: #ff00c8ff;
     background-color: white;
 }
+
