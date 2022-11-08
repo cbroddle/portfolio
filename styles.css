@@ -35,13 +35,13 @@ h5 {
 }
 
 .logo {
-    /* font Comfortaa */
     padding: 35px;
+    display: flex;
 }
 
-.logo > img {
-   width: 100px;
-   height: auto;
+.logo>img {
+    width: 100px;
+    height: auto;
 }
 
 .nav {
@@ -51,7 +51,7 @@ h5 {
     align-items: center;
 }
 
-.nav > a {
+.nav>a {
     padding: 25px;
     border-top: 2px white solid;
     color: white !important;
@@ -64,6 +64,7 @@ h5 {
     display: flex;
     justify-content: center;
 }
+
 .icon {
     fill: white;
     height: 35px;
@@ -84,7 +85,7 @@ h5 {
 
 .name-logo {
     height: 58px;
-    padding-bottom: 35px; 
+    padding-bottom: 35px;
 }
 
 .headings {
@@ -171,30 +172,80 @@ h5 {
     background-color: white;
 }
 
-@media screen and
-(max-width: 950px) 
-and (min-width: 300px) {
+@media screen and (max-width: 950px) and (min-width: 300px) {
+
     body {
-        padding: 0;
         margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column-reverse;
+        min-width: fit-content;
+    }
+
+    .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        display: flex;
+    }
+
+    .main-container {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-wrap: nowrap;
+    }
+
+    .top-section {
+        margin: 0;
+        padding: 30px;
         display: flex;
         flex-direction: column;
     }
 
-    .sidebar {
-        
-        width: 100vw;
+    .headings {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-bottom: 100px;
     }
 
-    .mid-section {
+    .name-logo {
+        max-width: 350px;
+        height: auto;
+    }
+
+    .about {
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .projects {
+    .mid-section {
+        margin: 0;
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
 
+    .projects-heading {
+        margin: 0;
+        padding: 0;
+        padding-top: 50px;
+    }
+
+    .projects {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact {
+        margin: 0;
+        padding: 0;
+    }
 }
