@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Allura&display=swap" rel="stylesheet">
+    <script src="app.js" defer></script>
     <title>Portfolio</title>
 </head>
 
@@ -31,6 +32,25 @@
     </div>
     <div class="main-container">
         <div class="top-section">
+            <!-- Mobile Nav Start -->
+            <div class="mobile-nav">
+                <div class="menu-icon">
+                    <!-- Menu Icon Code -->
+                    <svg style="width:36px;height:36px" viewBox="0 0 24 24">
+                        <path fill="currentColor" d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z" />
+                    </svg>
+                </div>
+            </div>
+            <div class="menu-container-outside">
+                <aside class="menu-container">
+                    <ul class="menu-list">
+                        <li><a href="index.html#about">About</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="index.html#contact">Contact</a></li>
+                    </ul>
+                </aside>
+            </div>
+            <!-- Mobile Nav End -->
             <div class="headings">
                 <h1 class="name-logo">Christen Broddle</h1>
                 <h3>Front-End</h3>
@@ -60,11 +80,13 @@
             </div>
             <div class="contact" id="contact">
                 <p class="contact-heading">Contact</p>
-                <input type="text" class="contact-input" id="name" name="name" placeholder="Full Name" required><br>
-                <input type="email" class="contact-input" id="email" name="email" placeholder="youremail@mail.com"
-                    required><br>
-                <input type="text" class="contact-input" id="message" placeholder="Type message here...">
-                <input type="submit" id="submit" name="submit" value="Submit">
+                <form action="https://formsubmit.co/christenbroddlecareer@gmail.com" method="POST">
+                    <input type="text" class="contact-input" id="name" name="name" placeholder="Full Name" required><br>
+                    <input type="email" class="contact-input" id="email" name="email" placeholder="youremail@mail.com"
+                        required><br>
+                    <input type="text" class="contact-input" id="message" placeholder="Type message here...">
+                    <input type="submit" id="submit" name="submit" value="Submit">
+                </form>
             </div>
         </div>
 

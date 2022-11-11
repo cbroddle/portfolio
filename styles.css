@@ -77,6 +77,10 @@ h5 {
     padding: 8px;
 }
 
+.mobile-nav {
+    display: none;
+}
+
 .main-container {
     margin-left: 18vw;
     display: flex;
@@ -151,6 +155,13 @@ h5 {
     color: #434343;
 }
 
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 75vw;
+}
+
 .contact-input {
     border: transparent;
     width: 55%;
@@ -188,6 +199,7 @@ h5 {
     }
 
     .sidebar {
+        position: static;
         margin: 0;
         padding: 0 0 50px 0;
         width: 100vw;
@@ -201,28 +213,93 @@ h5 {
         flex-wrap: nowrap;
     }
 
+    .mobile-nav {
+        margin: 0;
+        padding: 0;
+        width: 100vw;
+        height: 50px;
+        background-color: #fb7185;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: center;
+    }
+
+    .menu-container-outside {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        padding-top: 50px;
+    }
+
+    /* Hide menu links Default */
+    .menu-container {
+        height: 0;
+        overflow: hidden;
+        transition: 1s;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        background-color:#fb7185;
+        color: white;
+        max-width: 10rem;
+    }
+
+    /* Toggle class */
+    .show-menu-container {
+        height: 5rem;
+        padding: 35px;
+    }
+
+    .menu-icon {
+        color: white;
+        padding-right: 10px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+    }
+
+    ul.menu-list {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .menu-list>li {
+        padding: 10px;
+        font-size: 18px;
+    }
+
     .top-section {
         margin: 0;
-        padding: 30px;
+        padding: 0;
         display: flex;
         flex-direction: column;
     }
 
     .headings {
+        color: #fb7185;
         display: flex;
         flex-direction: column;
         align-items: center;
-        padding-bottom: 100px;
+        padding: 50px 30px 100px 30px;
     }
 
-    .name-logo {
-        max-width: 350px;
-        height: auto;
+    h1.name-logo {
+        text-align: center;
+        height: auto !important;
     }
+
 
     .about {
         margin: 0;
-        padding: 0;
+        padding: 0 30px;
         display: flex;
         flex-direction: column;
         align-items: center;
